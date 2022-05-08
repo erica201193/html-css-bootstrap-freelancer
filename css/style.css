@@ -1,0 +1,48 @@
+
+.lightgreen-bg {
+    background-color: #19BC9C;
+    color: white;
+}
+
+.footer-bg-top {
+    background-color: #3A546D;
+    color: white;
+}
+
+.avatar-img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.star-hr {
+    height: 4px;
+    background-color: #ffff;
+    border-radius: 50px;
+}
+
+.black-hr {
+    background-color: black;
+}
+
+.portfolio-img {
+    max-width: 50px;
+}
+
+.contact-borders {
+    border: none;
+}
+
+.footer-border {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 35px;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.footer-icon {
+    position: absolute;
+    top: 8px;
+}
