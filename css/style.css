@@ -1,31 +1,45 @@
+:root {
+    --bs-primary: #1abc9c;
+    --bs-primary-rgb: 26, 188, 156;
 
-header {
-    background-color: #2C3E4F;
-    color: white;
-    height: 4rem;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    --my-primary-dark: #199f84;
+    --my-primary-dark-rgb: 25, 159, 132;
+
+    --bs-secondary: #3a546d;
+    --bs-secondary-rgb: 58, 84, 109;
+
+    --bs-dark: #2c3e50;
+    --bs-dark-rgb: 44, 62, 80;
+}
+
+.my-bg-primary {
+    background-color: var(--bs-primary);
+}
+
+.my-bg-secondary {
+    background-color: var(--bs-secondary);
+}
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.my-title-style {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-subtitle-style {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
-.right-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 2rem;
-}
-
-
-.lightgreen-bg {
-    background-color: #19BC9C;
-    color: white;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
 
 footer {
     background-color: #3A546D;
@@ -39,7 +53,6 @@ footer {
 
 .star-hr {
     height: 4px;
-    background-color: #ffff;
     border-radius: 50px;
 }
 
