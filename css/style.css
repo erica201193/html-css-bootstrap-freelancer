@@ -12,6 +12,8 @@
     --bs-dark-rgb: 44, 62, 80;
 }
 
+
+
 .my-bg-primary {
     background-color: var(--bs-primary);
 }
@@ -23,6 +25,11 @@
 .section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.star-hr {
+    height: 4px;
+    border-radius: 50px;
 }
 
 .my-title-style {
@@ -39,46 +46,38 @@
     margin-bottom: 1rem;
 }
 
-
-
-footer {
-    background-color: #3A546D;
-    color: white;
-}
-
 .avatar-img {
     max-width: 200px;
     margin: 0 auto;
-}
-
-.star-hr {
-    height: 4px;
-    border-radius: 50px;
-}
-
-.black-hr {
-    background-color: black;
 }
 
 .portfolio-img {
     max-width: 50px;
 }
 
-.contact-borders {
-    border: none;
+.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
-.footer-border {
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 100%;
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--my-primary-dark);
+    border-color: var(--my-primary-dark);
+    box-shadow: 0 0 0 0.25rem rgb(var(--bs-primary-rgb), 0.5);
+}
+
+.my-icon {
     width: 35px;
     aspect-ratio: 1/1;
-    position: relative;
 }
-
-.footer-icon {
-    position: absolute;
-    top: 8px;
+.my-footer-icon {
+    transform: translateX(100%) translateY(30%);
 }

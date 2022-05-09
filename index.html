@@ -8,7 +8,7 @@
 
     <script src="https://kit.fontawesome.com/7fce092bdf.js" crossorigin="anonymous"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -23,13 +23,13 @@
 
                 <ul class="nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#">portfolio</a>
+                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#portfolio">portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#">about</a>
+                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#about">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#">contact</a>
+                        <a class="nav-link text-white text-uppercase fw-bold" aria-current="page" href="#contact">contact</a>
                     </li>
                 </ul>
 
@@ -61,7 +61,7 @@
 
 <!-------------- PORTFOLIO -------------->
 
-    <div class="section">
+    <div class="section" id="portfolio">
         <div class="container">
             <h2 class="my-subtitle-style">PORTFOLIO</h2>
 
@@ -114,7 +114,7 @@
 
 <!---------------- ABOUT ---------------->
 
-    <div class="section my-bg-primary">
+    <div class="section my-bg-primary" id="about">
         <div class="container text-white">
             <h2 class="my-subtitle-style">ABOUT</h2>
 
@@ -152,7 +152,7 @@
 
 <!-------------- CONTACT ME -------------->
 
-    <div class="section">
+    <div class="section" id="contact">
         <div class="container">
             <h2 class="my-subtitle-style">CONTACT ME</h2>
 
@@ -165,54 +165,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-8 mx-auto">
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="+00(39) 3382029824">
+                        <label for="floatingInput">Phone Number</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <textarea style="height: 300px;" class="form-control" placeholder="Leave a message here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Message</label>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-5">
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
             
-            <form class="row g-3 align-items-center">
-                <div class="col-md-2">
-                    <label for="firstName" class="col-form-label">Name</label>
-                </div>
-                <div class="col-md-10">
-                    <input type="text" id="firstName" class="form-control contact-borders" required>
-                  </div>
-            </form>
-            <hr>
-
-            <form class="row g-3 align-items-center">
-                <div class="col-md-2">
-                    <label for="email" class="col-form-label">Email Address</label>
-                </div>
-                <div class="col-md-10">
-                    <input type="email" id="email" class="form-control contact-borders" required>
-                  </div>
-            </form>
-            <hr>
-
-            <form class="row g-3 align-items-center">
-                <div class="col-md-2">
-                    <label for="phoneNumber" class="col-form-label" >Phone Number</label>
-                </div>
-                <div class="col-md-10">
-                    <input type="text" id="phoneNumber" class="form-control contact-borders" placeholder="+00(39) 3382029824" required>
-                  </div>
-            </form>
-            <hr>
-
-            <form class="row g-3">
-                <div class="col-md-2">
-                    <label for="message" class="col-form-label">Message</label>
-                </div>
-                <div class="col-md-10">
-                    <textarea class="form-control contact-borders" id="message" rows="10"></textarea>
-                  </div>
-            </form>
-            <hr>
-
-            <button class="btn lightgreen-bg" type="submit">Send</button>
-
         </div>
     </div>
 
     <footer>
-        <div class="container py-5 footer-bg-top">
+        <div class="container py-5 my-bg-secondary text-white">
             <div class="row">
                 <div class="col-4">
                     <h6>LOCATION</h6>
@@ -222,21 +209,26 @@
                 </div>
                 <div class="col-4">
                     <h6>AROUND THE WEB</h6>
-                    <div class="footer-border ">
-                        <i class="fa-brands fa-facebook-f footer-icon"></i>
+                    <div class="my-icon border border-1 rounded-circle">
+                        <i class="fa-brands fa-facebook-f my-footer-icon"></i>
                     </div>
 
-                    <div class="footer-border">
-                        <i class="fa-brands fa-google-plus-g footer-icon"></i>
+                    <div class="my-icon border border-1 rounded-circle">
+                        <i class="fa-brands fa-google-plus-g my-footer-icon"></i>
                     </div>
 
-                    <div class="footer-border">
-                        <i class="fa-brands fa-twitter footer-icon"></i>
+                    <div class="my-icon border border-1 rounded-circle">
+                        <i class="fa-brands fa-twitter my-footer-icon"></i>
                     </div>
 
-                    <div class="footer-border">
-                        <i class="fa-brands fa-linkedin-in footer-icon"></i>
+                    <div class="my-icon border border-1 rounded-circle">
+                        <i class="fa-brands fa-linkedin-in my-footer-icon"></i>
                     </div>
+
+                    <i class="fa-brands fa-facebook-f border border-1 rounded-circle px-2 py-3"></i>
+                    <i class="fa-brands fa-google-plus-g border border-1 rounded-circle p-2"></i>
+                    <i class="fa-brands fa-twitter border border-1 rounded-circle p-2"></i>
+                    <i class="fa-brands fa-linkedin-in border border-1 rounded-circle p-2"></i>
 
                 </div>
                 <div class="col-4">
