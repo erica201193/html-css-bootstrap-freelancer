@@ -1,10 +1,33 @@
 
+header {
+    background-color: #2C3E4F;
+    color: white;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.right-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+}
+
+
 .lightgreen-bg {
     background-color: #19BC9C;
     color: white;
 }
 
-.footer-bg-top {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer {
     background-color: #3A546D;
     color: white;
 }
